@@ -133,6 +133,7 @@ module.exports = function(options){
             res.end(css);
 
           }, {
+            source_comments: options.source_comments || options.sourceComments || false,
             include_paths: [ sassDir ].concat(options.include_paths || options.includePaths || []),
             image_path: options.image_path || options.imagePath,
             output_style: options.output_style || options.outputStyle
